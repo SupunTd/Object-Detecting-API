@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom"
+import FaceAPI from "./components/Api/facial";
+import HandAPI from "./components/HandAPI/hand";
+import Home from "./components/Home/Home";
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter >
+
+          <Routes>
+            <Route path ="*" element={<Navigate to="/"/>}></Route>   {/*this route will be used as a catch-all route for any undefined or unmatched URLs. */}
+            <Route path="/" element ={<Home/>} ></Route>
+              <Route path="/faceAPI" element ={<FaceAPI/>} ></Route>
+              <Route path="/handAPI" element ={<HandAPI/>} ></Route>
+          </Routes>
+
+      </BrowserRouter>
   );
 }
 
-export default App;
+
