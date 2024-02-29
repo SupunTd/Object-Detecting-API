@@ -12,7 +12,7 @@
 🔗 Find the code on GitHub: [Project Repository](https://lnkd.in/gqMDzD9M)
 
 ## Usage
-[Include instructions or examples on how to use your project here.]
+Detection face in Real Time
 
 ## Feedback
 I'd love to hear your thoughts and feedback! Feel free to open an issue or reach out. Your support means the world to me. 🙏
