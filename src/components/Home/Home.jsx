@@ -8,10 +8,10 @@ const HomePage = () => {
             <MainHeader />
         <Container maxWidth="sm" style={{ textAlign: 'center', marginTop: '100px' }}>
             <Typography variant="h4" gutterBottom>
-                Welcome to My Home Page
+               Smile Detection System
             </Typography>
             <Typography variant="h6">
-                Hello, I'm Supun Thilakshana
+                We are Group 6
             </Typography>
         </Container>
 

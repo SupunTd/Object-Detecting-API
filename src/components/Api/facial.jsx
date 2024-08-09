@@ -127,7 +127,7 @@ const WebcamComponent = () => {
             <ToastContainer />
 
             <div className="myapp">
-                <h1>Face Detection Model</h1>
+                <h1>Smile Detection Model</h1>
                 <div className={`appvideo ${isLoading ? 'loading' : ''}`}>
                     <video crossOrigin="anonymous" ref={videoRef}
                            autoPlay
